@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-3">
                     <div class="card" style="width: 18rem;" v-for="music in arrayMusic">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img :src="music.poster" class="card-img-top" alt="...">
                         <div class="card-body"  >
                             <p class="card-text">{{ music.year }}</p>
                         </div>
