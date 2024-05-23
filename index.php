@@ -18,12 +18,14 @@
 <body>
     <div id="app">
         <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="card" style="width: 18rem;" v-for="music in arrayMusic">
-                        <img :src="music.poster" class="card-img-top" alt="...">
-                        <div class="card-body"  >
-                            <p class="card-text">{{ music.year }}</p>
+            <div class="row g-2">
+                <div class="col-12 col-md-6 col-lg-4" v-for="music in arrayMusic">
+                    <div class="card" style="width: 18rem;">
+                        <img :src="music.poster" class="card-img-top" :alt="`${music.title} di ${music.author}`">
+                        <div class="card-body">
+                            <h4 class="card-text text-center">{{music.title}}</h4>
+                            <p class="card-text text-center">{{ music.author }}</p>
+                            <h4 class="card-text text-center">{{music.year}}</h4>
                         </div>
                     </div>
                 </div>
