@@ -1,0 +1,22 @@
+.ms_bg{
+    background-color: #1d2d3c;
+}
+
+header{
+    background-color: #06131f;
+}
+
+.ms_spotify-logo{
+    width: 80px;
+    height: 5rem;
+    margin-left: 3rem;
+}
+
+.ms_card_container{
+    background-color: #112030;
+    width: 50%;
+    height: 20rem;
+}
+
+
+
