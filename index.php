@@ -22,15 +22,15 @@
         </header>
         <main>
             <div class="container">
-                <div class="row g-2">
-                    <div class="col-4" v-for="music in arrayMusic">
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center g-4">
+                    <div class="col" v-for="music in arrayMusic">
                         <div class="ms_card_container d-flex justify-content-center p-3">
-                            <div class="ms_card text-white" style="width: 18rem;">
+                            <div class="text-white" style="width: 18rem;">
                                 <img :src="music.poster" class="card-img-top mb-2 img-fluid" :alt="`${music.title} di ${music.author}`">
                                 <div class="card-body">
                                     <h6 class="card-text text-center">{{music.title}}</h4>
-                                    <p class="card-text text-center">{{ music.author }}</p>
-                                    <p class="card-text text-center">{{music.year}}</p>
+                                        <p class="card-text text-center">{{ music.author }}</p>
+                                        <p class="card-text text-center">{{music.year}}</p>
                                 </div>
                             </div>
                         </div>
@@ -39,8 +39,9 @@
             </div>
         </main>
     </div>
-    <!-- js -->
-    <script src="./js/script.js"></script>
+</body>
+<!-- js -->
+<script src="./js/script.js"></script>
 </body>
 
 </html>
